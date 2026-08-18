@@ -51,7 +51,7 @@ Each token should contain the following information:
   "name": "Token Name",
   "symbol": "TOKEN",
   "decimals": 18,
-  "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/token/logo.png"
+  "logoURI": "https://raw.githubusercontent.com/Ozone-chain/token-list/main/assets/token/logo.png"
 }
 ```
 
@@ -66,7 +66,7 @@ tokenlist.json
 The raw token list can be consumed by compatible applications using:
 
 ``` text
-https://raw.githubusercontent.com/ozonechain/token-list/main/tokenlist.json
+https://raw.githubusercontent.com/Ozone-chain/token-list/main/tokenlist.json
 ```
 
 ## Logo Guidelines
@@ -126,7 +126,7 @@ Applications can consume the token list directly:
 
 ``` javascript
 const TOKEN_LIST_URL =
-  "https://raw.githubusercontent.com/ozonechain/token-list/main/tokenlist.json";
+  "https://raw.githubusercontent.com/Ozone-chain/token-list/main/tokenlist.json";
 
 const response = await fetch(TOKEN_LIST_URL);
 const tokenList = await response.json();
