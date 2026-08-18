@@ -1,0 +1,35 @@
+{
+  "name": "OzoneChain Token List",
+  "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/ozo/logo.png",
+  "keywords": [
+    "ozonechain",
+    "ozo",
+    "ozone",
+    "babyozo",
+    "lob"
+  ],
+  "timestamp": "2026-08-18T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 4000,
+      "address": "0x707548a9b279121C5c6418119CFD81B8c40F8095",
+      "name": "BabyOZO",
+      "symbol": "BABYOZO",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/baby-ozo/logo.png"
+    },
+    {
+      "chainId": 4000,
+      "address": "0x7fc9BD76F3EB166E6ef24Cb9Aa0b9ff735Ac3CDF",
+      "name": "LobsterSwap",
+      "symbol": "LOB",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/lob/logo.png"
+    }
+  ]
+}
