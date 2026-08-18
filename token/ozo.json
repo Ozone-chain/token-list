@@ -3,6 +3,6 @@
   "name": "Ozone Chain Mainnet",
   "symbol": "OZO",
   "decimals": 18,
-  "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/ozo/logo.png",
+  "logoURI": "https://raw.githubusercontent.com/Ozone-chain/token-list/main/assets/ozo/logo.png",
   "type": "native"
 }
