@@ -1,22 +1,26 @@
 # OzoneChain Token List
 
-Official token metadata and logos for tokens deployed on [OzoneChain](https://ozonechain.io/).
+Official token metadata and logos for tokens deployed on
+[OzoneChain](https://ozonechain.io/).
 
-This repository provides standardized token information, logos, and metadata for wallets, decentralized applications, explorers, exchanges, and other services integrating with the OzoneChain ecosystem.
+This repository provides standardized token information, logos, and
+metadata for wallets, decentralized applications, explorers, exchanges,
+and other services integrating with the OzoneChain ecosystem.
 
 ## Supported Assets
 
-| Asset | Symbol | Type | Network |
-|---|---|---|---|
-| Ozone | OZO | Native Coin | OzoneChain |
-| Baby OZO | BABYOZO | ERC-20 | OzoneChain |
-| LOB | LOB | ERC-20 | OzoneChain |
+  Asset      Symbol    Type          Network
+  ---------- --------- ------------- ------------
+  Ozone      OZO       Native Coin   OzoneChain
+  Baby OZO   BABYOZO   ERC-20        OzoneChain
+  LOB        LOB       ERC-20        OzoneChain
 
-> Contract addresses and metadata are maintained by the OzoneChain ecosystem team.
+> Contract addresses and metadata are maintained by the OzoneChain
+> ecosystem team.
 
 ## Repository Structure
 
-```text
+``` text
 token-list/
 ├── assets/
 │   ├── ozo/
@@ -34,14 +38,13 @@ token-list/
 ├── tokenlist.json
 ├── LICENSE
 └── README.md
-
-
 ```
 
 ## Token Metadata
 
 Each token should contain the following information:
-```text
+
+``` json
 {
   "chainId": 0,
   "address": "0x0000000000000000000000000000000000000000",
@@ -52,18 +55,17 @@ Each token should contain the following information:
 }
 ```
 
-
 ## Token List
 
 The complete token list is available in:
 
-```text
+``` text
 tokenlist.json
 ```
 
 The raw token list can be consumed by compatible applications using:
 
-```text
+``` text
 https://raw.githubusercontent.com/ozonechain/token-list/main/tokenlist.json
 ```
 
@@ -71,73 +73,83 @@ https://raw.githubusercontent.com/ozonechain/token-list/main/tokenlist.json
 
 Token logos should follow these guidelines:
 
-PNG format preferred
-Square dimensions
-Recommended size: 256 × 256 px
-Transparent background preferred
-No unnecessary text
-High-quality source image
-Consistent branding
-Logo must represent the official token
+-   PNG format preferred
+-   Square dimensions
+-   Recommended size: 256 × 256 px
+-   Transparent background preferred
+-   No unnecessary text
+-   High-quality source image
+-   Consistent branding
+-   Logo must represent the official token
 
 Recommended structure:
 
+``` text
 assets/
 └── token-name/
     └── logo.png
-Adding a New Token
+```
+
+## Adding a New Token
 
 To add an OzoneChain token:
 
-Create the token logo.
-Add the logo under assets/<token-name>/logo.png.
-Create the token metadata under tokens/<token-name>.json.
-Add the token to tokenlist.json.
-Verify the contract address and decimals.
-Submit a pull request.
+1.  Create the token logo.
+2.  Add the logo under `assets/<token-name>/logo.png`.
+3.  Create the token metadata under `tokens/<token-name>.json`.
+4.  Add the token to `tokenlist.json`.
+5.  Verify the contract address and decimals.
+6.  Submit a pull request.
 
-All token information must correspond to a token actually deployed on OzoneChain.
+All token information must correspond to a token actually deployed on
+OzoneChain.
 
-Token Verification
+## Token Verification
 
 Before adding a token, verify:
 
-Contract address
-Chain ID
-Token name
-Token symbol
-Decimals
-Contract ownership/project information
-Official project website
-Official logo
+-   Contract address
+-   Chain ID
+-   Token name
+-   Token symbol
+-   Decimals
+-   Contract ownership/project information
+-   Official project website
+-   Official logo
 
-Submitting a token to this repository does not constitute an endorsement, audit, or investment recommendation by OzoneChain.
+Submitting a token to this repository does not constitute an
+endorsement, audit, or investment recommendation by OzoneChain.
 
-Usage
+## Usage
 
 Applications can consume the token list directly:
 
+``` javascript
 const TOKEN_LIST_URL =
   "https://raw.githubusercontent.com/ozonechain/token-list/main/tokenlist.json";
 
-
 const response = await fetch(TOKEN_LIST_URL);
 const tokenList = await response.json();
+```
 
-Example:
+### Example
 
+``` javascript
 const babyOzo = tokenList.tokens.find(
   (token) => token.symbol === "BABYOZO"
 );
 
-
 console.log(babyOzo);
-MetaMask Integration
+```
 
-Applications can use the token metadata from this repository when requesting users to add an OzoneChain token to MetaMask.
+## MetaMask Integration
+
+Applications can use the token metadata from this repository when
+requesting users to add an OzoneChain token to MetaMask.
 
 Example:
 
+``` javascript
 await window.ethereum.request({
   method: "wallet_watchAsset",
   params: {
@@ -150,30 +162,36 @@ await window.ethereum.request({
     }
   }
 });
+```
 
-This repository provides token metadata and does not guarantee automatic token recognition or display by any specific wallet.
+This repository provides token metadata and does not guarantee automatic
+token recognition or display by any specific wallet.
 
-Security
+## Security
 
 Do not submit:
 
-Fake token contracts
-Unverified token information
-Malicious token metadata
-Impersonation tokens
-Copyrighted logos without authorization
-Contracts that are not deployed on OzoneChain
+-   Fake token contracts
+-   Unverified token information
+-   Malicious token metadata
+-   Impersonation tokens
+-   Copyrighted logos without authorization
+-   Contracts that are not deployed on OzoneChain
 
-If you discover incorrect or malicious information, please open an issue or contact the OzoneChain team.
+If you discover incorrect or malicious information, please open an issue
+or contact the OzoneChain team.
 
-Contributing
+## Contributing
 
 Contributions are welcome from projects building on OzoneChain.
 
-Before submitting a pull request, ensure that all metadata has been verified and follows the repository structure and naming conventions.
+Before submitting a pull request, ensure that all metadata has been
+verified and follows the repository structure and naming conventions.
 
-License
+## License
 
-Token metadata and repository configuration are provided for ecosystem integration purposes.
+Token metadata and repository configuration are provided for ecosystem
+integration purposes.
 
-Individual token logos and project trademarks remain the property of their respective owners.
+Individual token logos and project trademarks remain the property of
+their respective owners.
