@@ -1,0 +1,9 @@
+{
+  "chainId": 4000,
+  "address": "0x707548a9b279121C5c6418119CFD81B8c40F8095",
+  "name": "Baby OZO",
+  "symbol": "BABYOZO",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/baby-ozo/logo.png",
+  "type": "ERC20"
+}
