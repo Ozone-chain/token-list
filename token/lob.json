@@ -1,0 +1,9 @@
+{
+  "chainId": 4000,
+  "address": "0x7fc9BD76F3EB166E6ef24Cb9Aa0b9ff735Ac3CDF",
+  "name": "LobsterSwap",
+  "symbol": "LOB",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/ozonechain/token-list/main/assets/lob/logo.png",
+  "type": "ERC20"
+}
